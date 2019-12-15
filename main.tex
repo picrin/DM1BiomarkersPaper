@@ -194,60 +194,44 @@
 % Title must be 250 characters or less.
 \begin{flushleft}
 {\Large
-\textbf\newline{Towards development of statistical techniques to evaluate myotonic dystrophy type 1 mRNA biomarkers in the context of a clinical trial} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+\textbf\newline{Towards development of a statistical framework to evaluate myotonic dystrophy type 1 mRNA biomarkers in the context of a clinical trial} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
 }
 \newline
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
 \\
-Adam Kurkiewicz\textsuperscript{1},
+Adam Kurkiewicz\textsuperscript{1*},
 Anneli Cooper\textsuperscript{3}{\textcurrency},
-Guillaume Bassez\textsuperscript{4},
-Bruno Eymard\textsuperscript{5},
-Ralf Krahe\textsuperscript{6},
-Mani Mahadevan\textsuperscript{7},
-Giovanni Meola\textsuperscript{8},
-Jack Puymirat\textsuperscript{9},
-Mark Rogers\textsuperscript{10},
-Benedikt Schoser\textsuperscript{11},
-Lubov Timchenko\textsuperscript{12},
-Baziel van Engelen\textsuperscript{13},
-Tetsuo Ashizawa \textsuperscript{14},
-Richard Moxley \textsuperscript{15},
+Emily McIlwaine\textsuperscript{3},
+Sarah A. Cumming\textsuperscript{3},
+Berit Adam\textsuperscript{3},
+Ralf Krahe\textsuperscript{4},
+Jack Puymirat\textsuperscript{5},
+Benedikt Schoser\textsuperscript{6},
+Lubov Timchenko\textsuperscript{7},
+Tetsuo Ashizawa \textsuperscript{8},
+Charles Thornton \textsuperscript{9},
 Simon Rogers\textsuperscript{2}{\Yinyang},
 John McClure\textsuperscript{1}{\Yinyang},
-Darren G Monckton\textsuperscript{3*}{\Yinyang},
-with Dystrophia Myotonica Biomarker Discovery Initative
+Darren G Monckton\textsuperscript{3}{\Yinyang}
 \\
 \bigskip
 \textbf{1} Institute of Cardiovascular and Medical Sciences, University of Glasgow, Glasgow, United Kingdom
 \\
 \textbf{2} School of Computing Science, University of Glasgow, Glasgow, United Kingdom
 \\
-\textbf{3} Institute of Molecular Cell and Systems Biology, University of Glasgow, Glasgow, United Kingdom
+\textbf{3} Institute of Molecular Cell and Systems Biology, College of Medical, Veterinary and Life Sciences, University of Glasgow, Glasgow, United Kingdom
 \\
-\textbf{4} Département de Pathologie, CHU Henri Mondor, Créteil Cedex, France
+\textbf{4} Department of Genetics, University of Texas, MD Anderson Cancer Center, Houston, TX, USA
 \\
-\textbf{5} Neuromuscular Pathology Clinical Unit, Myology Institute, Salpêtrière Hospital, Paris, France
+\textbf{5} Laboratory of Human Genetics, CHUL Medical Research Centre, University of Laval, Quebec City, QC, Canada
 \\
-\textbf{6} Dept of Cancer Genetics, MD Anderson Cancer Center, University of Texas, Houston, TX, USA
+\textbf{6} Friedrich Baur Institute, Department of Neurology, Ludwig Maximilians University, Munich, Germany
 \\
-\textbf{7} Department of Pathology, Molecular Diagnostics Lab, University of Virginia, Charlottesville, VA, USA
+\textbf{7} Department of Pediatrics, Division of Neurology, Cincinnati Children's Hosptial, University of Cincinnati, College of Medicine, Cincinnati Ohio, USA
 \\
-\textbf{8} Department of Neurology, IRCCS Policlinico Sandonato, Milan, Italy
+\textbf{8} VA Medical Center, Houston, Texas, USA
 \\
-\textbf{9} Laboratory of Human Genetics, CHUL Medical Research Centre, University of Laval, Quebec City, QC, Canada
-\\
-\textbf{10} University Hospital of Wales, Cardiff, Wales
-\\
-\textbf{11} Friedrich Baur Institute, Department of Neurology, Ludwig Maximilians University, Munich, Germany
-\\
-\textbf{12} Department of Molecular Physiology and Biophysics, Baylor College of Medicine, Houston, TX, USA
-\\
-\textbf{13} Neuromuscular Centre Nijmegen, Department of Neurology, Radboud University Medical Centre, Nijmegen, The Netherlands
-\\
-\textbf{14} VA Medical Center, Houston, Texas, USA
-\\
-\textbf{15} University of Rochester, Medical Center
+\textbf{9} University of Rochester, Medical Center
 School of Medicine and Dentistry, Rochester, New York, USA
 \bigskip
 
@@ -274,13 +258,13 @@ School of Medicine and Dentistry, Rochester, New York, USA
 % \textpilcrow Membership list can be found in the Acknowledgments section.
 
 % Use the asterisk to denote corresponding authorship and provide email address in note below.
-* darren.monckton@glasgow.ac.uk
+* Adam.Kurkiewicz@glasgow.ac.uk
 
 \end{flushleft}
 % Please keep the abstract below 300 words
 \section*{Abstract}
 
-Myotonic dystrophy type 1 (DM1) is a rare genetic disorder, characterised by anticipation of muscular dystrophy, myotonia, and other symptoms. DM1 is caused by the expansion of a CTG repeat in the 3' untranslated region of {\it DMPK}. Longer CTG expansions are associated with greater symptom severity and earlier age at onset. The primary mechanism of pathogenesis is thought to be mediated by a gain of function of the CUG-containing RNA, that leads to {\it trans}-dysregulation of RNA metabolism of many other genes. Specifically, the alternative splicing (AS) and alternative polyadenylation (APA) of many genes is known to be disrupted. In a context of a clinical trial of emerging DM1 treatments, it is important to be able to objectively quantify treatment efficacy at the level of molecular biomarkers. We show how previously described candidate mRNA biomarkers, can be used to model an {\it effective} reduction in CTG length, using modern high-dimensional statistcs (machine learning), and a previously unpublished blood an muscle mRNA microarray dataset. We show how this model can be used to detect treatment effect in the context of a clinical trial.
+Myotonic dystrophy type 1 (DM1) is a rare genetic disorder, characterised by muscular dystrophy, myotonia, and other symptoms. DM1 is caused by the expansion of a CTG repeat in the 3'-untranslated region of {\it DMPK}. Longer CTG expansions are associated with greater symptom severity and earlier age at onset. The primary mechanism of pathogenesis is thought to be mediated by a gain of function of the CUG-containing RNA, that leads to {\it trans}-dysregulation of RNA metabolism of many other genes. Specifically, the alternative splicing (AS) and alternative polyadenylation (APA) of many genes is known to be disrupted. In the context of clinical trials of emerging DM1 treatments, it is important to be able to objectively quantify treatment efficacy at the level of molecular biomarkers. We show how previously described candidate mRNA biomarkers can be used to model an effective reduction in CTG length, using modern high-dimensional statistics (machine learning), and a blood and muscle mRNA microarray dataset. We show how this model could be used to detect treatment effects in the context of a clinical trial.
 
 % Please keep the Author Summary between 150 and 200 words
 % Use first person. PLOS ONE authors please skip this step. 
@@ -295,32 +279,31 @@ Myotonic dystrophy type 1 (DM1) is a rare genetic disorder, characterised by ant
 
 \subsection*{Myotonic dystrophy type 1}
 
-Myotonic dystrophy type 1 (DM1) is an autosomal dominant trinucleotide repeat disorder, caused by abnormally large CTG repeat in a 3' UTR of the gene encoding {\it dystrophia myotonica protein kinase} ({\it DMPK}) \cite{Brook1992}. Transcription of {\it DMPK} in affected individuals produces a toxic, GC-rich mRNA molecule, which dysregulates several RNA binding factors, including proteins MBNL1, MBNL2, MBNL3, CUGBP1, hnRNP H and Staufen1 \cite{Meola2015}. The pathomechanism of the dysregulation of a splicing factor MBNL1 is perhaps best understood, with MBNL1 sequestration to the toxic {\it DMPK} RNA product resulting in splicing defects of pre-mRNAs of multiple genes, including chloride channel ({\it CLCN1}), brain microtubule-associated
-tau ({\it MAPT}) and insulin receptor ({\it INSR}) \cite{Holt2009}. Such splicing defects are direct cause or major contributing factor of clinical symptomps of DM1, such as myotonia ({\it CLCN1}), abnormal glucose response ({\it INSR}), cardiac conduction defects ({\it TNNT2}), and are hypothesised to play a role in other clinical symptoms, including muscle wasting, cataracts, hypersomnia, gastrointestinal abnormalities, as well as premature baldness and testicular atrophy in males \cite{Meola2015} \cite{Udd2012}. The severity of symptoms is positively correlated with CTG repeat length \cite{Meola2015}.
+Myotonic dystrophy type 1 (DM1) is an autosomal dominant trinucleotide repeat disorder, caused by an expanded CTG repeat in the 3' UTR of the {\it dystrophia myotonica protein kinase} ({\it DMPK}) gene \cite{Brook1992}. Transcription of {\it DMPK} in affected individuals produces a toxic, GC-rich mRNA molecule, which results in dysregulation of several RNA binding factors, including proteins MBNL1, MBNL2, MBNL3, CELF1 (CUGBP1), HNRNPH1 and STAU1 (Staufen1) \cite{Meola2015, Thornton2014}. The pathomechanism of the dysregulation of splicing factor MBNL1 is perhaps best understood, with MBNL1 sequestration to the toxic {\it DMPK} RNA product resulting in alternative splicing defects of pre-mRNAs of multiple genes, including the chloride channel ({\it CLCN1}), brain microtubule-associated
+tau ({\it MAPT}) and insulin receptor ({\it INSR}) \cite{Holt2009}. Such alternative splicing (AS) defects are generally believed to be a major contributing factor of clinical symptoms of DM1, such as myotonia ({\it CLCN1}) or abnormal glucose response ({\it INSR}), and have been postulated to play a role in cardiac conduction defects ({\it RYR2}, {\it SERCA2}, {\it TNNT2}) \cite{Cudia2009}. AS defects may underlie other clinical symptoms of DM1, including muscle wasting, cataracts, hypersomnia, gastrointestinal abnormalities, as well as premature baldness and testicular atrophy in males \cite{Meola2015, Udd2012}. The severity of symptoms is positively correlated with CTG repeat length \cite{Meola2015}.
 
-Toxic {\it DMPK} transcript in DM1-affected individuals was identified as an active target for theraupetic intervation \cite{Pandey2015}, and it is expected that breakdown or deactivation of the toxic mRNA will result in at least partial reversal of DM1-induced AS changes and other known and unknown DM1-induced biomolecular pathologies.
+The toxic {\it DMPK} transcript in DM1-affected individuals has been identified as an active target for theraupetic intervation \cite{Pandey2015}, and it is expected that breakdown of the toxic mRNA will result in at least partial reversal of DM1-induced AS changes and other known and unknown DM1-induced biomolecular pathologies.
 
 Spliceopathy of DM1 is an active area of research, with novel splicing defects being continuously reported. Nakamori {\it et al.} \cite{Nakamori2013} identified a set of 41 genes, which are mis-spliced in DM1, suggesting these genes as potential biomarkers of DM1. Batra {\it et al.} \cite{Batra2014} identified 80 genes, whose expression indicates disrupted APA, reusing the (human) dataset of Nakamori {\it et al.} and using other datasets, including data from mouse models.
 
 \subsection*{Predictors in genetics research}
 
-A widespread paradigm in biological and clinical research are case-control studies, using frequentist statistics tools focusing on hypothesis testing (inference). Examples of such tools include GWAS designs \cite{Bush2012}, placebo and active control clinical trial designs \cite{Brody2016}, non-inferiority designs \cite{DAgostino2002} or heredity designs based on twin studies. It is reported that designs of as many as 70\%  of studies published in leading medical journals use at most the following three statistical tests as part of their design: Student's t-test, Fisher's exact test and Chi-square test \cite{Prel2010}.
+A widespread paradigm in biological and clinical research is the case-control study, using frequentist statistics tools focusing on hypothesis testing (inference). Examples of such designs include Genome Wide Association Studies (GWAS) \cite{Bush2012}, placebo and active control clinical trial designs \cite{Brody2016}, non-inferiority designs \cite{DAgostino2002} or heredity designs based on twin studies. It is reported that designs of as many as 70\%  of studies published in leading medical journals use at most the following three statistical tests as part of their design: Student's t-test, Fisher's exact test, and the Chi-square test \cite{Prel2010}.
 
-A possible alternative to the focus on hypothesis testing is building predictors or classifiers, which produce a numerical estimate of a given trait (height, size of the DM1 trinucleotide expansion) or effect size, predict participant's category (such as affected/unaffected) or estimate the effect size of the treatment, given a set of independent variables (e.g. genotypes, mRNA profiles, etc.). If necessary, the efficacy of these predictors/classifiers can be evaluated using traditional frequentist tools, such as p-values.
+A possible alternative to the focus on hypothesis testing is building predictors or classifiers, which produce a numerical estimate of a given trait (height, size of the DM1 trinucleotide expansion) or effect size, predict participant's category (such as affected/unaffected), or estimate the effect size of the treatment, given a set of independent variables (e.g. genotypes, mRNA profiles, {\it etc.}). If necessary, the efficacy of these predictors/classifiers can be evaluated using traditional frequentist tools, such as {\it p}-values.
 
-Predictors have been successfully applied in genetics research. For example, Lello {\it et al.} \cite{Lello2017} report predicting human height from genotype data, obtained using human SNP microarrays, to within a few centimeters for most participants in their sample. This level of accuracy is achieved by a very large sample size of nearly half a million individuals. A review by Van Raden {\it et al.} \cite{VanRaden2009} reports ability to predict dairy output of certain cattle breeds with R\textsuperscript{2} of 49\%, using non-linear models based on SNP microarrays. The work of Azencott {\it et al.} \cite{Azencott2013} allows to incorporate prior information about biological networks into the predictive model, increasing prediction accuracy, and again is targeting the genomics community. In a work, which is one of direct motivations behind our research, Lee {\it et al.} \cite{Lee2013} report being able to predict most of Huntington disease trinucleotide repeat size using mRNA profiling of lymphoblastoid cell lines. In this paper we demonstrate a further application of predictors in genetics research, by constructing a predictor, which can produce a numerical estimate of a participant's DM1 CTG repeat from an mRNA profile, and demonstrate its usefulness in the context of a hypothetical clinical trial of a DM1 treatment.
+Predictors have been successfully applied in genetics research. For example, Lello {\it et al.} \cite{Lello2017} report predicting human height from genotype data, obtained using human Single Nucleotide Polymorphism (SNP) microarrays, to within a few centimeters for most participants in their sample. This level of accuracy is achieved due to a very large sample size of nearly half a million individuals. A review by Van Raden {\it et al.} \cite{VanRaden2009} reports ability to predict dairy output of certain cattle breeds with R\textsuperscript{2} of 49\%, using non-linear models based on SNP microarrays. The work of Azencott {\it et al.} \cite{Azencott2013} allows one to incorporate prior information about biological networks into the predictive model, increasing prediction accuracy. In one of the direct motivations behind our research here, Lee {\it et al.} \cite{Lee2013} report being able to predict most of Huntington disease trinucleotide repeat size using mRNA profiling of lymphoblastoid cell lines. Here, we demonstrate a further application of predictors in genetics research, by constructing a predictor, which can produce a numerical estimate of a participant's DM1 CTG repeat length (measured from blood) from an mRNA profile (obtained from muscle), and demonstrate its usefulness in the context of a hypothetical clinical trial of a DM1 treatment.
 
 \subsection*{Prior identification of alternative splicing and alternative polyadenylation events in muscles of DM1-affected individuals}\label{prior_work}
 
-Our primary reference is the work of Nakamori {\it et al.} \cite{Nakamori2013}, who identified 42 genes exhibiting AS defects in DM1. Briefly, their methodology was as follows:
-Muscle tissue (patients: four biceps, two quadriceps, one tibialis anterior, one diaphragm; controls: eight vastus lateralis) were sampled post-mortem from eight DM1 affected participants and eight unaffected controls.
+Our primary reference is the work of Nakamori {\it et al.} \cite{Nakamori2013}, who identified 42 genes exhibiting AS defects in DM1. Briefly, the methodology of the study was as follows: muscle tissue (patients: four biceps, two quadriceps, one tibialis anterior, one diaphragm; controls: eight vastus lateralis) were sampled post-mortem from eight DM1 affected individuals and eight unaffected controls. Selection of the postmortem DM1 samples were based on high integrity of RNA present in the sample and presence of splicing misregulation of {\it INSR} and {\it AP2A1}, and then compared to quadriceps biopsy samples from eight healthy controls.
+
 mRNA was extracted from the samples, purified and hybridized to GeneChip™ Human Exon 1.0 ST microarrays.
-Putative AS defects were identified using a mixture of existing methods, such as Affymetrix's PLIER, DABG and Alternative Transcript Analysis Methods for Exon Arrays, and new methods proposed and described by the authors.
-Identified putative defects were validated using RT-PCR in 50 control subjects, yielding 42 genes with confirmed AS defects.
+Putative AS defects were identified using a mixture of existing methods, such as Affymetrix's PLIER, DABG and Alternative Transcript Analysis Methods for Exon Arrays, and new methods proposed and described by the authors. Identified putative defects were validated using RT-PCR in 50 DM1 subjects, yielding 42 genes with confirmed AS defects.
 
-The authors report several technical obstacles with this approach, with initial version of their pipeline suffering from as many as 80\% putative AS defects failing to replicate with RT-PCR. Further analysis suggested that this occurred when \enquote{signal intensity for the entire transcript or a particular exon was low}, \enquote{overall expression of a transcript was strongly up- or down- regulated in DM1 relative to normal controls}, or \enquote{signal intensity of an exon was inappropriately high relative to other exons in the same transcript} \cite{Nakamori2013}.
+Nakamori {\it et al.} report several technical obstacles with this approach, with the initial version of their pipeline suffering from as many as 80\% putative AS defects failing to replicate with Reverse Transcription-PCR. Further analysis suggested that this occurred when \enquote{signal intensity for the entire transcript or a particular exon was low}, \enquote{overall expression of a transcript was strongly up- or down- regulated in DM1 relative to normal controls}, or \enquote{signal intensity of an exon was inappropriately high relative to other exons in the same transcript} \cite{Nakamori2013}.
 
-Batra {\it et al.} \cite{Batra2014} re-used the dataset of Nakamori {\it et al.} \cite{Nakamori2013} and used similar techniques to filter down the data, in the search of genes with dysregulated APA. Their selection criteria focused on probesets with over 2-fold change in DM1 or DM2 vs. unaffected controls, excluding genes that are represented by ≤ 5 probesets, retrogenes and non-protein coding genes, which resulted in pre-selection of 438 probesets. The authors performed visual inspection of all pre-selected probesets identifying 123 APA events belonging to 80 genes.
+Batra {\it et al.} \cite{Batra2014} re-used the dataset of Nakamori {\it et al.} \cite{Nakamori2013} and used similar techniques to filter down the data, in a search for genes with dysregulated APA. Their selection criteria focused on probesets with over 2-fold change in DM1 or DM2 vs. unaffected controls, excluding genes that were represented by ≤ 5 probesets, retrogenes and non-protein coding genes, which resulted in pre-selection of 438 probesets. The authors performed visual inspection of all pre-selected probesets identifying 123 APA events belonging to 80 genes.
 
 
 %\blockquote{To prioritize candidates for further investigation, probe sets were selected with a \textgreater2-fold change in DM1 or DM2 vs. normal controls (p \textless 0.01 for DM1 vs. normal, p \textless 0.05 for DM2 vs. normal). Among 858 probe sets selected by these criteria, we eliminated candidates that could result from differences in transcription start site, genes that were represented by ≤5 probe sets, retrogenes and non-protein coding genes leaving 438 probe sets. Among these candidate events, 123 (28\%) belonging to 80 genes represented possible alternative 3′ exons or APA sites (Table S5).}
@@ -329,12 +312,12 @@ Batra {\it et al.} \cite{Batra2014} re-used the dataset of Nakamori {\it et al.}
 
 %\blockquote{The group of potential APA isoforms (Table S5) was chosen following visual inspection of each candidate on graphs showing signal intensity for all probe sets representing single genes for four groups of samples and localization of differentially expressed exons on RefSeq gene structures (Figures 7 and S5).}
 
-%TODO Question for Darren. Should I mention Batra's mistake in attributing all muscle groups to VL, whereas original source shows there is a wide selection: 4 biceps, 2 quadriceps, 1 TA, 1 diaphragm (cases), 8 VL (controls)? It's important, because we highlight it as the other study's limitation later on.
-
 
 \subsection*{Evaluating Potential Biomarkers of DM1}
 
-We propose that predictors are a suitable statistical tool, which can find applications in DM1 research and clinical practice. As described before, DM1 case/control status \cite{Nakamori2013, Batra2014} leaves discernible pattern in the mRNA profiles of muscle samples. In this research, rather than to work with the DM1 status as a binary variable, we look at DM1 as a spectrum disease, severity of which is quantified by the length of the DM1 CTG repeat in any individual patient. We propose that it is possible to capture the effect, which the length of this repeat has on mRNA expression in muscle into a simple statistical model, based on linear regression. Using the model we can predict the size of DM1 CTG repeat from the mRNA profile significantly better than a random predictor. We propose that the model can serve as a valuable tool in evaluating efficacy of any treatment for DM1 as such treatment enters pre-clinical or clinical trials, by enabling investigators to directly quantify the treatment effect as measured by effective reduction of DM1 CTG repeat length.
+We propose that predictors are a suitable statistical tool, which can find applications in DM1 research and clinical practice. As described before, DM1 case/control status \cite{Nakamori2013, Batra2014} leaves a discernible pattern in the mRNA profiles of muscle samples. In this research, rather than to work with the DM1 status as a binary variable, we look at DM1 as a spectrum disease, severity of which is quantified by the length of the DM1 CTG repeat in any individual patient. We propose that it is possible to capture the effect, which the length of this repeat has on mRNA expression in muscle into a simple statistical model, based on linear regression. Using the model we can predict the size of the DM1 CTG repeat from the mRNA profile significantly better than a random predictor. We propose that the model can serve as a valuable tool in evaluating efficacy of any treatment for DM1 as such treatment enters pre-clinical or clinical trials, by enabling investigators to directly quantify the treatment effect as measured by effective reduction of DM1 CTG repeat length.
+
+We would like to stress here that ``effective reduction'' in the case of most candidate treatments will not be an actual reduction in the repeat length (with notable exception of candidate treatments based on gene editing). Rather, an ``effective reduction'' is a reduction of ``effective repeat length'', i.e. repeat length as judged by the degree of splicing changes. This can be demonstrated with an example of a patient with a certain pre-treatment repeat length, and both physiological and molecular symptoms characteristic for that repeat length. If such patient were to undergo an effective treatment we would expect these symptoms to be partially reversed, and our predictive framework to predict a shorter repeat length than the patient's actual repeat length. Subject to correctness of our understanding of the molecular pathophysiology of the splicing changes, which we rely on to predict the effective repeat length, we expect that the reversal of the splicing changes would occur immediately after the release of inactivated AS and APA factors, such as MBNL1. This release should in turn happen immediately after a candidate therapeutic were to reach a clinically significant level in the relevant tissue. We expect this to happen on a timescale of days to weeks, unlike the reversal of physiological symptoms, which we would expect to happen on longer timescales.
 
 %\begin{enumerate}
 %	\item{\label{microarry_pattern} The length of the trinucleotide repeat specific to Myotonic Dystrophy (DM1) leaves a discernible pattern in the mRNA profiles obtained from muscle samples of affected and unaffected participants using a microarray chip.}
@@ -362,32 +345,32 @@ We propose that predictors are a suitable statistical tool, which can find appli
 
 \section*{Materials and methods}
 \subsection*{The dataset} \label{the_dataset}
-As part of the {\it Dystrophia Myotonica} Biomarker Discovery Initiative (DMBDI) we've obtained a dataset from 35 participants, including 31 DM1 type 1 cases and four unaffected controls. All DM1 cases in this research were heterozygous for the abnormally expanded CTG repeat. The mode of the length of the DM1 CTG expansion (MAL) was determined by Polymerase Chain Reaction (PCR) of blood DNA for 35/36 patients. One patient refused blood donation. For each of the 35 blood-donating patients mRNA expression profiling of blood was performed using Affymetrix GeneChip™ Human Exon 1.0 ST microarray. For 28/36 patients a successful quadriceps muscle biopsy was obtained. The muscle tissue was mRNA profiled using the same type of microarray. In total, a complete set of samples (blood and muscle) was obtained for 27/36 patients. mRNA profiling was carried out by a provider Gene Logic using standard Affymetrix hybridisation protocol.
+As part of the {\it Dystrophia Myotonica} Biomarker Discovery Initiative (DMBDI) a dataset was obtained from 36 participants, including 32 DM1 cases and four unaffected controls. All DM1 cases in this research were heterozygous for the abnormally expanded CTG repeat. The mode of the length of the DM1 CTG expansion (Modal Allele Length, MAL) was determined by small-pool PCR of blood DNA for 35/36 patients \cite{Monckton1995}. For this work we did not attempt to measure the repeat length from muscle, due to a very high degree of repeat instability in muscle cells \cite{Thornton2014} and associated difficulties in its experimental measurement. One patient refused blood donation. For each of the 35 blood-donating patients mRNA expression profiling of blood was performed using Affymetrix GeneChip™ Human Exon 1.0 ST microarray. For 28 of 36 patients a successful quadriceps muscle biopsy was obtained. The muscle tissue was mRNA profiled using the same type of microarray. In total, a complete set of samples (blood and muscle) was obtained for 27 of 36 patients. mRNA profiling was carried out by the GeneLogic service lab (on a fee-for-service basis) using standard Affymetrix hybridisation protocol.
 
-Principal Component Analysis (PCA) was performed on both blood and muscle profiles, and visual inspection was carried out to detect presence of outliers. Zero outliers in the blood batch and four outliers in the muscle batch were identified and expression profiling was repeated for these patients. For the analysis we used only the repeated profiles.
+Principal Component Analysis (PCA) was performed on both blood and muscle profiles, and visual inspection was carried out to detect the presence of outliers. Zero outliers in the blood batch and four outliers in the muscle batch were identified and expression profiling was repeated for these patients. For the analysis we used only the repeated profiles.
 
 It should be noted that our dataset differs from the dataset collected by Nakamori {\it et al.} in the following ways:
 \begin{enumerate}
 \item We did not perform confirmatory RT-PCR analyses.
 \item Our dataset includes both blood and muscle tissue samples.
 \item The number of mRNA-profiled participants is about twice the size of the discovery dataset of Nakamori {\it et al.}, however, we did not perform a follow-up validation study.
-\item Unlike Nakamori {\it et al.} we have additional information to participant's case-control status, specifically, the mode of the CTG repeat length from blood (Modal Allele Length, MAL). We also estimate the repeat length at birth (Progenitor Allele Length, PAL) using a previously developed method \cite{Morales2012}.
-\item We sample from the same muscle group (quadriceps), as opposed to from a wide range of muscle groups (biceps, quadriceps, tibialis anterior, diaphragm, vastus lateralis) for all study participants, which eliminates a potentially important confounder.
-\item All our participants are alive at the time of sample collection, which eliminates another potential confounder, but other potential confounders still remain, see \nameref{limitations}
+\item Unlike Nakamori {\it et al.} we have additional information to participant's case-control status, specifically, the mode of the CTG repeat length from blood (MAL). We also estimate the repeat length at birth (Progenitor Allele Length, PAL) using a previously developed method \cite{Morales2012}.
+\item We sample from the same muscle group (quadriceps), as opposed to from a wide range of muscle groups (biceps, quadriceps, tibialis anterior, diaphragm, vastus lateralis) for all study participants, which eliminates a potentially important confounding effects.
+\item All our participants are alive at the time of sample collection, which eliminates another potential confounder, but other potential confounders still remain, see \nameref{limitations}.
 \end{enumerate}
 
-The dataset is deposited to Gene Expression Omnibus (GEO) with accession number ?.
+The dataset is deposited to Array Express with accession number E-MTAB-7983.
 
 \subsection*{Affymetrix GeneChip™ Human Exon 1.0 ST microarray}
 
-The microarray chip we used, Affymetrix GeneChip™ Human Exon 1.0 ST microarray contains over 5 million probes, {\it i.e.} short cDNA sequences, which target transcribed regions with high specificity. Each probe in the HuEx chip contains precisely 25 nucleotides. Consequently, transcribed regions of interest, which are shorter than 25 nucleotides, for example some of the short exons, are not targeted. This is an important limitation in the context of DM1, as some AS events previously described in DM1, such as AS of exon 5 in cardiac troponin T ({\it TNNT2}) \cite{Rexiati2018} cannot be detected.
+The microarray chip used was the Affymetrix GeneChip™ Human Exon 1.0 ST microarray, which contains over 5 million probes, {\it i.e.} short cDNA sequences, which target transcribed regions with high specificity. Each probe in the HuEx chip contains precisely 25 nucleotides. Consequently, transcribed regions of interest, which are shorter than 25 nucleotides, for example some of the short exons, are not targeted. This is an important limitation in the context of DM1, as some AS events previously described in DM1, such as AS of exon 5 in cardiac troponin T ({\it TNNT2}) \cite{Rexiati2018} cannot be detected.
 
 Each continuous section of DNA can be targeted by a collection of up to four probes, referred to as probeset. DNA sections targeted by the chip include known and suspected coding exons in known and suspected genes, as well as non-coding genomic features, including 5' and 3' UTRs, and various other types of transcribed or hypothetically transcribed DNA (miRNA, rRNA, pseudo-genes, {\it etc.}). All probes targeting such a region belong to a single probeset. Probesets are further grouped into transcription clusters, which correspond to the entire genes.
 
 \subsection*{Data preparation and analysis}
 \label{data_preparation}
-We've designed and built a pipeline, programmed in Python, which has the following data preparation capabilities:
-Reading raw Affymetrix CEL v4 files (peer reviewed and merged into Biopython\cite{Cock2009} \cite{Kurkiewicz2016});
+We designed and built a pipeline, programmed in Python, which has the following data preparation capabilities:
+Reading raw Affymetrix CEL v4 files (peer reviewed and merged into Biopython\cite{Cock2009, Kurkiewicz2016});
 quantile normalisation and log2 transformation of intensity data;
 strict annotation of Affymetrix probes using GENECODE v26 lift 37 through selecting probes corresponding to annotated GENECODE transcripts of type ``protein\_coding'', annotated genes of type ``protein\_coding'' and exons of type ``CDS'' or ``UTR''. Appendix \nameref{AppendixA} gives full source code, user manual and additional explanation of each step of this pipeline.
 
@@ -405,38 +388,37 @@ In each file, the first row is a header containing tab-separated names of data o
 \item seq5to3 – unlike Affymetrix we always report the sequence in 5' to 3' direction, and always with regards to the plus strand, even if the coding sequence is contained on the minus strand.
 \item genecode\_left, genecode\_right – these are genomic coordinates as reported by a reference assembly (GRCh37). Following convention, first coordinate is 1-based, and coordinates are left-, right- inclusive.
 \item x, y give the x and the y coordinates of probes on the chip.
-\item patient\_* – these are quantile normalised and log2-transformed intensities at the given probe for the given patient.
+\item patient\_* – these are quantile normalised and log2-transformed intensities at the given probe for the given study participant.
 
 \end{itemize}
 
 Each subsequent row contains data and metadata for a single probe.
 
 We develop a predictive model, which closely follows that of Lee {\it et al.} \cite{Lee2013}. We work with pre-selected sets of genes that act as candidate biomarkers. For this purpose, we look at the following collections of genes:
-
+        
 \begin{enumerate}
 
-\item A previously identified selection of genes, as listed in \nameref{Appendix3} and identified by Nakamori et al. \cite{Nakamori2013} as genes whose AS is disrupted in DM1. We codename these genes ``DM1-AS''.
+\item A previously identified selection of genes, listed in \nameref{Appendix3} and identified by Nakamori et al. \cite{Nakamori2013} as genes whose AS is disrupted in DM1. We codename these genes ``DM1-AS''.
 
-\item A previously identified selection of genes, as listed in \nameref{Appendix2} and identified by Batra et al. \cite{Batra2014} as genes whose AP is disrupted in DM1. We codename these genes ``DM1-APA''.
+\item A previously identified selection of genes, listed in \nameref{Appendix2} and identified by Batra et al. \cite{Batra2014} as genes whose AP is disrupted in DM1. We codename these genes ``DM1-APA''. The overlap of this list of genes with DM1-AS is a list of two genes: LDB3, MBNL2.
 
-\item A single gene (which also belongs to DM1-APA), Troponin I1, slow skeletal type, TNNI1. We codename this single-gene collection ``TNNI1''.
+\item A single gene (which also belongs to DM1-APA), Troponin I1, slow skeletal type, TNNI1. We codename this single-gene collection ``TNNI1''. The gene was chosen post-hoc.
 
 \item All human genes, as identified in data preparation step. We codename this collection ``ALL''.
 \end{enumerate}
-Then we execute eight separate statistical analyses (four muscle and four blood analyses), based on these groups of genes.
 
-Each analysis is carried out as follows:
+Then we execute eight separate statistical analyses (four muscle and four blood analyses), based on these groups of genes. Each analysis was carried out as follows:
 
 \begin{enumerate}
-\item We randomly split our data into two sets, the training and the testing set, each containing 70\% and 30\% of participants respectively. We restrict our analysis only to genes, which belong to a particular group of genes being studied (DM1-APA, DM1-AS, TNNI1, ALL)
+\item We randomly split our data into two sets, the training and the testing set, each containing 70\% and 30\% of participants respectively. We restricted our analysis only to genes, which belonged to a particular group of genes being studied (DM1-APA, DM1-AS, TNNI1, ALL)
 \item Following Lee {\it et al.}, we select (up to) 500 probes whose intensities across all patients in the training set are most correlated with their corresponding MAL. We work at the level of individual probes, which allows us to circumvent issues around GC-correction and probeset aggregation. Probe data are fed directly into the model.
-\item Again using the training set, we train a 2-dimensional PLSR model on selected probes as features and corresponding MAL as the model output, which we later use to predict MAL in the testing set, again following Lee {\it et al.}
-\item We repeat steps 1 to 3 10,000 times.
+\item Again using the training set, we trained a 2-dimensional Partial Least Squares Regression (PLSR) model on selected probes as features and corresponding MAL as the model output, which we later used to predict MAL in the testing set, again following Lee {\it et al.}.
+\item We repeated steps 1 to 3 10,000 times.
 \item We report coefficient of determination (R\textsuperscript{2}) of the predicted MAL with the measured MAL across all folds obtained in step 4.
-\item We simulate a distribution of R\textsuperscript{2} of a random predictor, and obtain a p-value for the prediction of R\textsuperscript{2} in step 5.
+\item We simulated a distribution of R\textsuperscript{2} of a random predictor, and obtained a p-value for the prediction of R\textsuperscript{2} in step 5.
 \end{enumerate}
 
-To confirm that any observed signal is not a by-product or an artifact of the mathematical model used, or its implementation, we carry out the same kind of analysis using three other mathematical models:
+To confirm that any observed signal is not a by-product or an artifact of the mathematical model used, or its implementation, we carried out the same kind of analysis using three other mathematical models:
 
 \begin{enumerate}
 \item lasso
@@ -447,10 +429,10 @@ To confirm that any observed signal is not a by-product or an artifact of the ma
 To relate our findings to a potential clinical setting, we present power analysis relating various potential treatment effect sizes to their detectability in future clinical trials. The power analysis was performed as follows:
 
 \begin{enumerate}
-\item We simulate the distribution of MAL prediction error for the best predictor.
-\item We simulate the distribution of MAL post-treatment, with the assumption that MAL will be reduced by 10\%, 20\% or 50\%, which correspond to, respectively, small, medium and large treatment effect size.
-\item We establish the rejection region for a null hypothesis of ``no treatment effect'' at {\textalpha} = 0.05.
-\item We simulate the power, (1 - {\textbeta}), for studies involving 10 to 200 participants, in 10 participants increments.
+\item We simulated the distribution of MAL prediction error for the best predictor.
+\item We simulated the distribution of MAL post-treatment, with the assumption that MAL would be reduced by 10\%, 20\% or 50\%, which correspond to, respectively, small, medium and large treatment effect size.
+\item We established the rejection region for a null hypothesis of ``no treatment effect'' at {\textalpha} = 0.05.
+\item We simulated the power, (1 - {\textbeta}), for studies involving 10 to 200 participants, in increments of 10 participants.
 \end{enumerate}
 
 % For figure citations, please use "Fig" instead of "Figure".
@@ -472,15 +454,15 @@ Using our predictive model based on PLSR and a selection of candidate biomarkers
 
 In muscle we can detect strong signal for some of the selected candidate biomarker sets, with the two strongest predictors, DM1-AS and TNNI1, giving us R\textsuperscript{2} and p-values equal to 0.289, 0.320 and 0.00434, 0.00249 respectively. All values of R\textsuperscript{2} and p-values are given in Table \ref{muscle_results_table}. In particular, DM1-AS looks promising as a set of biomarkers, giving weight to the findings of Nakamori {\it et al.} \cite{Nakamori2013}.
 
-Based purely on numerical analysis of obtained results, one could declare TNNI1 as the best predictor of MAL in muscle, but care must be taken, as we chose this particular gene post-hoc and its true predictive value might have been influenced by issues relating to multiple hypotheses testing. An additional validation study would have to be performed before drawing any conclusions on the performance of TNNI1 as a DM1 biomarker.
+Based purely on numerical analysis of obtained results, one could declare TNNI1 as the best predictor of MAL in muscle, but care must be taken, as we chose this particular gene post-hoc and its true predictive value might have been influenced by issues related to multiple hypotheses testing. An additional validation study would have to be performed before drawing any conclusions on the performance of TNNI1 as a DM1 biomarker.
 
-A safer belief can be assigned to the predictive value of ``DM1-AS'' and ``DM1-APA'' as both sets of genes have been previously implicated in DM1 \cite{Batra2014}, and we can detect strong signal from both sets of genes, with models based on these genes capturing respectively 30\% and 15\% of MAL variance in our study group.
+A safer belief can be assigned to the predictive value of ``DM1-AS'' and ``DM1-APA'' as both sets of genes have been previously implicated in DM1 \cite{Batra2014}, and we can detect strong signal from both sets of genes, with models based on these genes capturing respectively 28.9\% and 15\% of MAL variance in our study group.
 
 One has to note an interesting observation relating to the ``curse of dimensionality'' and the performance of our PLSR-based model. Although TNNI1 is a subset of DM1-APA, TNNI1 on its own is a much better predictor than DM1-APA, as increasing the number of genes (features) increases the dimensionality of our data and worsens the prediction delivered by the PLSR model.
 
 A single run of 10,000 repetitions of a simulation can be visualised by plotting the predicted value of MAL against the actual, adding a small amount of random noise on the x-axis. For DM1-AS in muscle, such visualisation is given in Fig~\ref{fig1}. 
 
-In blood we cannot detect significant signal for most candidate biomarkers, with R\textsuperscript{2} not significantly respectively greater and lower than would be expected by chance, except in one case, DM1-APA, whose R\textsuperscript{2} and p-value are 0.15 and 0.0564 respectively. Full R\textsuperscript{2} and (uncorrected) p-values are given in Table \ref{blood_results_table}. Poor performance of blood data acting as a predictor of repeat length is perhaps not unexpected, as all candidate biomarkers evaluated in this study are based on prior analyses of muscle data, and might not be expressed, or only lowly expressed in blood, or that expression profiles might be very different from expression profiles in muscle. Only DM1-APA can potentially carry some predictive value, however, not as strongly as in muscle. This is perhaps not unexpected, as all candidate biomarkers evaluated in this study are based on prior analyses of muscle data, and might not be expressed, or only lowly expressed in blood.
+In blood we cannot detect significant signal for most candidate biomarkers, with R\textsuperscript{2} not significantly respectively greater and lower than would be expected by chance, except in one case, DM1-APA, whose R\textsuperscript{2} and p-value are 0.15 and 0.0564 respectively. Full R\textsuperscript{2} and (uncorrected) p-values are given in Table \ref{blood_results_table}. Poor performance of blood data acting as a predictor of repeat length is perhaps not unexpected, as all candidate biomarkers evaluated in this study are based on prior analyses of muscle data, and might not be expressed, or only lowly expressed in blood, or that expression profiles might be very different from expression profiles in muscle. Only DM1-APA can potentially carry some predictive value, however, not as strongly as in muscle.
 
 
 \begin{table}[!ht]
@@ -519,14 +501,14 @@ p-value & 0.213 & 0.0564 & 0.207 & 0.213 \\ \hline
 
 % Place figure captions after the first paragraph in which they are cited.
 \begin{figure}[!h]
- \includegraphics[width=\linewidth]{Nakamori_plot.png}
-\caption{{\bf DM1-AS muscle MAL prediction.} 10,000 repetitions of cross-validated MAL prediction from genes labeled DM1-AS from muscle}
+ %\includegraphics[width=\linewidth]{Nakamori_plot.png}
+\caption{{\bf DM1-AS muscle MAL prediction.} 10,000 repetitions of cross-validated MAL prediction from genes labeled DM1-AS from muscle for 18 training samples.}
 \label{fig1}
 \end{figure}
 
 \subsection*{Other models}
 
-As described in \nameref{data_preparation}, we have used a model based on feature selection from sets of candidate mRNA biomarkers to predict the MAL of DM1 CTG repeat using PLSR. As reported in \nameref{PLSRPerformance}, the set of genes DM1-AS is the strongest predictor if we limit our consideration to predictors chosen a-priori, {\it i.e.} excluding TNNI1.
+As described in \nameref{data_preparation}, we have used a model based on feature selection from sets of candidate mRNA biomarkers to predict the MAL of DM1 CTG repeat using PLSR. As reported in \nameref{PLSRPerformance}, the set of genes DM1-AS is the strongest predictor if we limit our consideration to predictors chosen a-priori ({\it i.e.} excluding TNNI1).
 
 A potential source of criticism could be that the effect observed is a technical effect due to the choice or the implementation of the mathematical model used (PLSR). We thus re-ran the analysis as described before in \nameref{data_preparation} using three mathematically distinct models: lasso, random forest regression and linear regression.
 
@@ -539,14 +521,15 @@ We report the performance of these models in Table \ref{model_comparison}:
 
 \begin{tabular}{|l|l|l|l|l|}
 \hline
- & PLSR & lasso & linear regression & random forest \\ \hline
-R\textsuperscript{2} & 0.289 & 0.286 & 0.291 & 0.149 \\ \hline
-p-value & 0.00434 & 0.00454 & 0.00418 & 0.0478 \\ \hline
+ & linear regression & PLSR & lasso & random forest \\ \hline
+R\textsuperscript{2} & 0.291 & 0.289 & 0.286 & 0.149 \\ \hline
+p-value & 0.00418 & 0.00434 & 0.00454 & 0.0478 \\ \hline
 \end{tabular}
 
 \label{model_comparison}
 \end{adjustwidth}
 \end{table}
+
 
 It should be noted that all models pick up statistically significant signal with both PLSR, lasso and linear regression performing almost equally well, and random forest performing about two times poorer (but still significantly better than a random predictor), which allows us to conclude that the effect observed is unlikely to be a modelling artifact.
 
@@ -554,16 +537,51 @@ It should be noted that all models pick up statistically significant signal with
 
 \subsection*{Applying the model in a clinical setting}
 
-Let us now consider the potential application of this predictive model in the context of evaluating efficacy of a DM1 treatment. DM1 patients would undergo muscle biopsy before starting the treatment, and another biopsy after the treatment had been started and necessary biological changes to reverse DM1 symptoms had occurred. Both biopsies would be mRNA profiled, and the resulting profiles would be used to perform MAL predictions. We expect that pre-treatment prediction would correspond to the actual MAL of any given patient. We expect that post-treatment prediction of MAL would correspond to an ``effective MAL'', which we'd expect to be lower than the ``actual MAL'' in affected participants, as long as the treatment is effective and DM1-induced disruption of AS or APA, as measured by DM1-AS or DM1-APA biomarkers is measurably reversed in obtained mRNA profiles. Pre-treatment and post-treatment predictions could be combined into a statistic that, given enough patients, would allow us to quantify the efficacy of the treatment at the molecular level. We discuss this idea further in the chapter \nameref{poweranalysis}.
+Let us now consider the potential application of this predictive model in the context of evaluating efficacy of a DM1 treatment. DM1 patients would undergo muscle biopsy before starting the treatment, and another biopsy after the treatment had been started and necessary biological changes to reverse DM1 symptoms had occurred. Both biopsies would be mRNA profiled, and the resulting profiles would be used to perform MAL predictions. We expect that pre-treatment prediction would correspond to the actual MAL of any given participant. We expect that post-treatment prediction of MAL would correspond to an ``effective MAL'', which we would expect to be lower than the ``actual MAL'' in affected participants, as long as the treatment is effective and DM1-induced disruption of AS or APA, as measured by DM1-AS or DM1-APA biomarkers is measurably reversed in obtained mRNA profiles. Pre-treatment and post-treatment predictions could be combined into a statistic that, given enough patients, would allow us to quantify the efficacy of the treatment at the molecular level. We discuss this idea further in the chapter \nameref{poweranalysis}.
 
-In some respects such a study could allow for better performance of the model, conceptually, it should be easier to capture DM1 specific expression changes in a setting where noise due to varied genetic backgrounds of participants can be reduced by looking at pairs of measurements of a single participant. There are a number of details in such study design, which need to be discussed by the community and decided upon, among others:
+In some respects, such a study could allow for better performance of the model, conceptually, it should be easier to capture DM1 specific expression changes in a setting where noise due to varied genetic backgrounds of participants can be reduced by looking at pairs of measurements of a single participant. There are a number of details in such study design, which need to be discussed by the community and decided upon, among others:
 \begin{enumerate}
 \item The mathematical basis of the model used. We propose a PLSR-based model, and demonstrate that models based on lasso and linear regression perform similarly, but other models can also be considered, in particular the work of Azencott {\it et al}. \cite{Azencott2013} in the context of L\textsubscript{1}-penalised regression (lasso) looks promising as it allows to incorporate prior biological knowledge, in the form of protein-protein interaction networks or other types of graph ontology, into the model, through the introduction of additional penalties based on discrete Laplacian, or apply alternative modelling strategies based on network flow, thereby increasing its predictive power.
 \item The training/testing pre-treatment/post-treatment data split and which genes should be included in the model input.
 \item The size of the study. Predictions in our study are based on 24 participants for blood and 18 for muscle. How much would the models' predictive power improve with a larger dataset?
-\item Establishing the clinically relevant effect size. Pandey {
-it et al.} \cite{Pandey2015} report various efficacies of a candidate DM1 treatment ISIS 486718 to lower toxic {\it DMPK} concentrations in wild-type and transgenic animal models and a range of tissues, starting with the efficacy of about 50\% in cardiac muscle, through about 70\% in skeletal muscle, up to about 90\% in liver and skeletal muscle. However, measuring DMPK levels may not necessarily directly correspond to the efficacy of treatment to reverse symptoms, and we could expect the rate of symptom reduction to be lower than the reported 50\% to 90\%. A difficult open question is what minimum treatment efficacy we are willing to accept as clinically significant.
+\item Establishing the clinically relevant effect size. Pandey {\it et al.} \cite{Pandey2015} report various efficacies of a candidate DM1 treatment ISIS 486718 to lower toxic {\it DMPK} concentrations in wild-type and transgenic animal models and a range of tissues, starting with the efficacy of about 50\% in cardiac muscle, through about 70\% in skeletal muscle, up to about 90\% in liver and skeletal muscle. However, measuring DMPK levels may not necessarily directly correspond to the efficacy of treatment to reverse symptoms, as the relationship between the quantity of the toxic transcript, splicing disruption and eventual clinical symptoms may be complex and non-linear. Conservatively, we need to expect the rate of symptom reduction to be lower than the reported 50\% to 90\%. A difficult open question is what minimum treatment efficacy we are willing to accept as clinically significant?
 \end{enumerate}
+
+\subsection*{An informal setting to explore the dataset}
+
+As this work is the first presentation of the DMBDI dataset, we recognise that further work might build on the dataset in ways which differ from our approach and cannot be predicted at the current stage of our understanding of DM1-related AS/APA changes. To facilitate this, we would like to propose a tool which on one hand allows for informal, interactive and exploratory analysis of the dataset and on the other allows the flexibility of building a custom analysis -- just like the one presented here.
+
+The tool is available online \cite{Kurkiewicz2019}, and is implemented as a jupyter notebook with custom visualisation of filtered and normalised DMBDI data. The flexibility of the tool comes at a cost. In order to support arbitrary bioinformatics analyses we have to support arbitrary code execution, which in turn requires protecting the tool with a password. We will share the password with any bona fide researcher upon request. A walk-through video showcasing the capabilities of the tool is available on youtube \cite{Kurkiewicz2019_video}.
+
+The major capability of the tool is the ability to produce ``railway plots''. Railway plots introduce the idea of a Manhattan plot from genomics community into transcriptomics. Each point represents statistical significance of the change of expression signal at a single probe across DM1 spectrum, as supported by experimental data. Points which belong to the same probeset, are identically coloured. See Figure \ref{fig2}  for an example railway plot.
+
+\begin{figure}[!h]
+ %\includegraphics[width=\linewidth]{TNNI1_interactive.png}
+\caption{TNNI1 Railway plot shows an APA event at probeset 245089.}
+\label{fig2}
+\end{figure}
+
+In a railway plot the y-axis represents negative logs of p-values of a two-tailed tests against a null hypothesis of no expression change at a single probe across the DM1 spectrum. Figure \ref{fig4} visualises one of such linear regressions for a probe belonging to probeset 245089. The logs of p-values are signed in accordance with the direction of the slope of the regression, with negative values indicating splice-out and positive values indicating a splice-in type of event.
+
+
+\begin{figure}[!h]
+ %\includegraphics[width=\linewidth]{single_probe_regression.png}
+\caption{Linear regression of expression intensity at a single probe belonging to probeset 245089 against DM1 repeat length.}
+\label{fig4}
+\end{figure}
+
+\begin{figure}[!h]
+ %\includegraphics[width=\linewidth]{TNNI1_ensemble.png}
+\caption{Visualisation of genomic coordinates of TNNI1 transcripts using Ensembl.}
+\label{fig3}
+\end{figure}
+
+
+For each of splice-out and splice-in directions in the plot, we show thresholds of statistical significance. The first pair of thresholds (faded red and blue respectively) correspond to statistical significance threshold of $0.05$. The second pair of thresholds correspond to $0.05/n$, where n is the total number of probes in the plot (saturated red and blue respectively). This is analogous to the way Manhattan plots are often presented for GWAS.
+
+Turning our attention from statistics to biology, we can ask about a likely biological interpretation of an observed splice-out event detected at probeset 2450829. Using Ensembl \cite{Kersey2017}, see figure \ref{fig3}), we can identify transcript TNNI1-203, which is the only GENECODE transcript featuring a probe selection region targeted by the probeset 2450829, in form of an alternative 3' UTR. This allows us to suggest that TNNI1-203 is downregulated in participants with longer DM1 repeats. GENECODE annotation further informs us that TNNI1-203 is an APPRIS P2 transcript (i.e. a candidate principal variant, a designation which comes from high level of support for functionality of the isoform), and is not a CDS incomplete transcript, which allows us to strengthen our belief in the fact that this is a biologically functional/ protein-coding transcript, which can play a role in the DM1-related AS/APA changes.
+
+Finally, and returning back to statistics, we can ask whether high significance of the splice-out event is a result of multiplicity effect, given that the gene was chosen post-hoc from a pool of candidate biomarker genes as determined by Batra et al. and Nakamori et al. \cite{Batra2014, Nakamori2013}. A standard approach here would be to combine the data from the discovery dataset with the data from the replication dataset, compute a more powerful test, and apply multiplicity correction. This is not possible in this case as the discovery dataset, underlying both studies is a case-control dataset, whereas our dataset captures DM1 status as a continuous variable via DM1 CTG repeat length measurement. An alternative is to combine both p-values using, e.g. Fisher's method \cite{Fisher1934}, which shows that the combined p-value against the null hypothesis of no change of signal intensity at the probeset 2450829 is $4.19\times 10^{-10}$. Computing the Bonferroni correction with multiplicity factor of 1.4 million, equal to the total number of HuEx probesets \cite{Affymetrix2005}, shows that the combined p-value based on the discovery dataset and our dataset is $5.88 \times 10^{-4}$. This is a strong confirmation of the significant correlation of DM1 status with TNNI1-203 downregulation. Details of the computation are available in \nameref{AppendixA}.
 
 \subsection*{Power Analysis}
 
@@ -579,7 +597,7 @@ However, our results combined with expected improvements of the model performanc
 \begin{table}[!ht]
 \begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
 \centering
-\caption{{\bf 10000 repetitions of a simulation predicting MAL from muscle cross-validated with a testing set separate from the training set.}}
+\caption{{\bf Power analysis. Entries in the table report power to detect treatment effect based on the size of a cohort (from 10 -- 200 participants) and the treatment effect of the study to reverse splicing changes (10, 20 and 50\%). Entries denoting power greater than 0.95\% are presented in boldface.}}
 
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -589,21 +607,21 @@ study size (participants) & treatment effect 10\% & treatment effect 20\% & trea
 30 & 0.162 & 0.423 & 0.947 \\ \hline
 40 & 0.193 & 0.517 & {\bf 0.981} \\ \hline
 50 & 0.226 & 0.596 & {\bf 0.994} \\ \hline
-60 & 0.259 & 0.671 & {\bf 0.998} \\ \hline 
-70 & 0.283 & 0.723 & {\bf 0.99908} \\ \hline
-80 & 0.311 & 0.772 & {\bf 0.99979} \\ \hline
+60 & 0.259 & 0.671 & {\bf 0.998} \\ \hline
+70 & 0.283 & 0.723 & {\bf 0.999} \\ \hline
+80 & 0.311 & 0.772 & {\bf 0.9998} \\ \hline
 90 & 0.339 & 0.816 & {\bf 0.99998} \\ \hline
 100 & 0.370 & 0.851 & {\bf 0.99998} \\ \hline
-110 & 0.39592 & 0.88058 & {\bf 0.99999} \\ \hline
-120 & 0.41811 & 0.90148 & {\bf 1.0} \\ \hline
-130 & 0.44787 & 0.92379 & {\bf 1.0} \\ \hline
-140 & 0.46685 & 0.93737 & {\bf 1.0} \\ \hline
-150 & 0.49964 & {\bf 0.95245} & {\bf 1.0} \\ \hline
-160 & 0.52316 & {\bf 0.96216} & {\bf 1.0} \\ \hline
-170 & 0.54467 & {\bf 0.96901} & {\bf 1.0} \\ \hline
-180 & 0.56775 & {\bf 0.97662} & {\bf 1.0} \\ \hline
-190 & 0.58901 & {\bf 0.9809} & {\bf 1.0} \\ \hline
-200 & 0.61316 & {\bf 0.9859} & {\bf 1.0} \\ \hline
+110 & 0.396 & 0.881 & {\bf 0.99999} \\ \hline
+120 & 0.418 & 0.901 & {\bf 1.0} \\ \hline
+130 & 0.448 & 0.924 & {\bf 1.0} \\ \hline
+140 & 0.467 & 0.937 & {\bf 1.0} \\ \hline
+150 & 0.500 & {\bf 0.952} & {\bf 1.0} \\ \hline
+160 & 0.523 & {\bf 0.962} & {\bf 1.0} \\ \hline
+170 & 0.545 & {\bf 0.969} & {\bf 1.0} \\ \hline
+180 & 0.568 & {\bf 0.977} & {\bf 1.0} \\ \hline
+190 & 0.589 & {\bf 0.981} & {\bf 1.0} \\ \hline
+200 & 0.613 & {\bf 0.986} & {\bf 1.0} \\ \hline
 \end{tabular}
 
 \label{power_table}
@@ -619,14 +637,16 @@ Adipocytes have different AS/APA profiles than myocytes.
 Observed AS/APA changes in the DM1 spectrum are mostly derived from differences in adipocyte/myocyte profile.
 As a result, mRNA study of muscle tissue is no more effective (and possibly less effective) than a blinded study based on pathophysiological inspection of the tissue.
 
-This argument can, of course be extended to other physiological changes than increased fat content, and other molecular events than AS/APA. Bachiński for example proposes that splicing changes could be a secondary result of muscle regeneration \cite{Bachinski2014}.
+This argument can, of course, be extended to other physiological changes than increased fat content, and other molecular events than AS/APA. Bachinski et al. \cite{Bachinski2014}, for example, propose that splicing changes could be a secondary result of muscle regeneration.
+
 There are multiple ways to address these concerns:
 
 \begin{enumerate}
-\item Alternative designs based on tissue culture models, where in-vivo limitations are reduced, with homogeneity of the cellular composition of the model being a big advantage.
-%\item Alternative designs based on single-cell next-gen sequencing.
-\item Investigating methods to correct for potential ``physiological'' covariates ({\it e.g.} fat content), using purely statistical techniques to estimate covariate influence from gathered data and existing prior information ({\it e.g.} mRNA profiles of adipocytes), or biological methods, such as a very recent effort to collect higher quality muscle samples through MRI-guided biopsy \cite{Saskie2018}.
+\item Alternative predictive model design based on tissue culture models, where {\it in vivo} limitations are reduced, with homogeneity of the cellular composition of the model being a big advantage.
+\item Investigating methods to correct for potential ``physiological'' covariates ({\it e.g.} fat content), using purely statistical techniques to estimate covariate influence from gathered data and existing prior information ({\it e.g.} mRNA profiles of adipocytes), or biological methods, such as a recent effort to collect higher quality muscle samples through MRI-guided biopsy \cite{Saskie2018}.
 \item Discovering DM1 biomarkers in blood, as opposed to muscle. Blood, being much more homogeneous tissue than muscle is expected to be less prone to the existence of confounding variables. Additionally, necessity of muscle sampling was highlighted to be a ``main drawback'' \cite{Nakamori2013}. However, achieving this would require at least two separate, successful studies, one to identify biomarkers and one to evaluate them. Even if blood biomarkers were identified, their clinical utility might be limited, as a reduction of an effective MAL in blood would not be as direct evidence of treatment effectiveness as such reduction in muscle.
+\item Introduction of positive controls in experimental designs. Biological samples in the positive control group would be composed of tissue collected from individuals with other muscular dystrophies (e.g. Becker muscular dystrophy, Duchenne muscular dystrophy, facioscapulohumeral muscular dystrophy or tibial muscular dystrophy). These diseases feature dystrophy and increased muscle regeneration program as part of their phenotype, but without disruption of RNA-binding splicing factors. Absence of DM1-specific splicing changes in these positive controls would allow to rule out alternative explanations of mis-splicing mechanisms (e.g. muscle regenration) and strengthen our belief in currently accepted models of molecular pathomechanism of DM1.
+\item Confining the analysis to transcripts which are exclusively or predominantly expressed in skeletal muscle, not fat.
 \end{enumerate}
 
 
@@ -651,7 +671,7 @@ There are multiple ways to address these concerns:
 
 \section*{Conclusion}
 
-In this study we design and build a model based on Partial Least Squares Regression, which can explain as much as 28.9\% of the variance in DM1 CTG trinucleotide expansion from mRNA splicing data. Such explainability is only obtained when the model is trained on expression data from genes previously identified by Nakamori {\it et al.} \cite{Nakamori2013} as having disrupted AS on data obtained from muscle samples. We show how such model could be used in a clinical setting in the context of emerging DM1 treatments, and report power analysis to detect treatment effect depending on size of the treatment effect, type 1 error ($\alpha$) and potential size of the clinical trial. 
+In this study we design and build a model based on PLSR, which can explain as much as 28.9\% of the variance in DM1 CTG trinucleotide expansion from mRNA splicing data. Such explainability is only obtained when the model is trained on expression data from genes previously identified by Nakamori {\it et al.} \cite{Nakamori2013} as having disrupted AS on data obtained from muscle samples. We show how such model could be used in a clinical setting in the context of emerging DM1 treatments, and report power analysis to detect treatment effect depending on size of the treatment effect, type 1 error ($\alpha$) and potential size of the clinical trial.
 
 \section*{Supporting information}
 
@@ -697,21 +717,22 @@ All data and metadata used in this study are available in publicly accessible s3
 
 All required third-party dependencies can be installed from the provided ``requirements.txt''
 
-Finally, ``jupyter notebook --ip 0.0.0.0 --port 8888'' can be issued to start the notebook server, which we can access remotely, using a DNS entry allocated for our EC2 instance and provided that communications on our chosen port is configured to be accessible through the AWS firewall.
+Finally, ``\lstinline{jupyter notebook --ip 0.0.0.0 --port 8888}'' can be issued to start the notebook server, which we can access remotely, using a DNS entry allocated for our EC2 instance and provided that communications on our chosen port is configured to be accessible through the AWS firewall.
 
 We now run notebooks in the following order:
 
 \begin{enumerate}
 
-\item ``parse\_chip\_data.ipynb''. This part of the pipeline is responsible for determining probeset ids, sequences of probes and probe coordinates on the chip. It produces an intermediate file with data adhering to the following schema: ``probeset, x, y, sequence''.
-\item ``parse\_csv\_annotations.ipynb''. Here, we determine ``genomic'' metadata, i.e. chromosomomal coordinates and strandedness.
-\item ``unpack\_CEL\_files.ipynb''. Here we use our own contribution to Biopython to parse the binary CEL v4 file format, which is what all our microarray data uses.
-\item ``quantile\_normalise.ipynb''. Here we perform quantile normalisation of our microarray data.
-\item ``reannotate\_probeset\_level.ipynb''. Here we verify Affymetrix's annotation. We determine that over 1\% probes are incorrectly annotated. We discard these probes. We limit our attention to probes, which belong to chromosomes chr1-chr22, X, Y and the mitochondrial DNA (M).
-\item ``intervaltrees.ipynb''. Here we carry out an exclusive filtering, choosing probes, which are identified by ``gencode.v26lift37.annotation.gtf'' as having ``transcript\_type'' equal to ``protein\_coding'',  or ``gene\_type'' equal to  ``protein\_coding'', as well as the exon type equal to ``CDS'' (Coding sequence) or ``UTR'' (5' or 3' untranslated regions).
-\item ``merge\_annotation\_experiment.ipynb''. Here we produce a single file per human gene, as identified in GENCODE v26, with data from all participants for all probes for that gene.
-\item ``predictions.ipynb''. Here we run our PLSR model to predict MAL from the microarray data.
-\item ``power\_analysis.ipynb''. Here we run power analysis presented in \nameref{ResultsDiscussion}.
+\item ``01\_parse\_chip\_data.ipynb''. This part of the pipeline is responsible for determining probeset ids, sequences of probes and probe coordinates on the chip. It produces an intermediate file with data adhering to the following schema: ``probeset, x, y, sequence''.
+\item ``02\_parse\_csv\_annotations.ipynb''. Here, we determine ``genomic'' metadata, i.e. chromosomomal coordinates and strandedness.
+\item ``03\_unpack\_CEL\_files.ipynb''. Here we use our own contribution to Biopython to parse the binary CEL v4 file format, which is what all our microarray data uses.
+\item ``04\_quantile\_normalise.ipynb''. Here we perform quantile normalisation of our microarray data.
+\item ``05\_reannotate\_probeset\_level.ipynb''. Here we verify Affymetrix's annotation. We determine that over 1\% probes are incorrectly annotated. We discard these probes. We limit our attention to probes, which belong to chromosomes chr1-chr22, X, Y and the mitochondrial DNA (M).
+\item ``06\_intervaltrees.ipynb''. Here we carry out an exclusive filtering, choosing probes, which are identified by ``gencode.v26lift37.annotation.gtf'' as having ``transcript\_type'' equal to ``protein\_coding'',  or ``gene\_type'' equal to  ``protein\_coding'', as well as the exon type equal to ``CDS'' (Coding sequence) or ``UTR'' (5' or 3' untranslated regions).
+\item ``07\_merge\_annotation\_experiment.ipynb''. Here we produce a single file per human gene, as identified in GENCODE v26, with data from all participants for all probes for that gene.
+\item ``08\_predictions.ipynb''. Here we run our PLSR model to predict MAL from the microarray data.
+\item ``10\_power\_analysis.ipynb''. Here we run power analysis presented in \nameref{ResultsDiscussion}.
+\item ``13\_combine\_p\_values.ipynb''. Here we combine p-values for a probeset of interest using a previously published p-value and one obtained in this study.
 
 \end{enumerate}
 
@@ -719,24 +740,24 @@ We now run notebooks in the following order:
 \label{Appendix3}
 {\bf DM1-AS}
 
-DTNA FHOD1 RYR1 MBNL1 MBNL2 ARFGAP2 TBC1D15 GFPT1 NFIX CAPZB CAPN3 UBE2D3 USP25 VPS39 SOS1 ANK2 LDB3 BIN1 TXNL4A CACNA1S DMD OPA1 ATP2A1 IMPDH2 NRAP ABLIM2 PDLIM3 ATP2A2 VEGFA TTN MLF1 ALPK3 KIF13A CLCN1 PHKA1 COPZ2 INSR CAMK2B
-
+ABLIM2, ALPK3, ANK2, ARFGAP2, ATP2A1, ATP2A2, BIN1, CACNA1S, CAMK2B, CAPN3, CAPZB, CLCN1, COPZ2, DMD, DTNA, FHOD1, GFPT1, IMPDH2, INSR, KIF13A, LDB3, MBNL1, MBNL2, MLF1, NFIX, NRAP, OPA1, PDLIM3, PHKA1, RYR1, SOS1, TBC1D15, TTN, TXNL4A, UBE2D3, USP25, VEGFA, VPS39
 
 \paragraph*{S3 Appendix.}
 \label{Appendix2}
 {\bf DM1-APA}
 
-ABCA1 MEF2C PDLIM5 KIF1B CHRNA1 KCNK7 MDN1 SPATS2L TPM3 ILF3 MBNL2 SLC25A36 CLDND1 DES TPM1 OSBPL1A TPM2 HDAC11 AP1G1 CELF1 FASTK LDB3 NDUFB10 NR2F1 PCMT1 PCM1 DAPK2 RTN2 RIN1 MORC3 PLIN2 BRSK2 CIRBP TJP2 TTYH3 PIK3C2B PFKFB2 PEBP4 ARHGEF7 DST KRBA1 MEF2D MGP GPS1 MTCH1 SNX1 NUP43 TMEM38B SAMD4A EZR TBL2 SMIM3 CDC42 MYH6 MEF2B IDH3A CEBPA CACNA1G ALG3 SPEG DNAJB6 SPTB AMHR2 AGL ASPH TNNI1 DVL3 ATP5E PDLIM2 BRWD1 CACNB1 LMNA COPS4 KDELR1 SETD3 LAMP2 PCBD2 TGFBI U2SURP RAB24
-
+ABCA1, AGL, ALG3, AMHR2, AP1G1, ARHGEF7, ASPH, ATP5E, BRSK2, BRWD1, CACNA1G, CACNB1, CDC42, CEBPA, CELF1, CHRNA1, CIRBP, CLDND1, COPS4, DAPK2, DES, DNAJB6, DST, DVL3, EZR, FASTK, GPS1, HDAC11, IDH3A, ILF3, KCNK7, KDELR1, KIF1B, KRBA1, LAMP2, LDB3, LMNA, MBNL2, MDN1, MEF2B, MEF2C, MEF2D, MGP, MORC3, MTCH1, MYH6, NDUFB10, NR2F1, NUP43, OSBPL1A, PCBD2, PCM1, PCMT1, PDLIM2, PDLIM5, PEBP4, PFKFB2, PIK3C2B, PLIN2, RAB24, RIN1, RTN2, SAMD4A, SETD3, SLC25A36, SMIM3, SNX1, SPATS2L, SPEG, SPTB, TBL2, TGFBI, TJP2, TMEM38B, TNNI1, TPM1, TPM2, TPM3, TTYH3, U2SURP
 
 %\paragraph*{S1 Table.}
 %\label{S1_Table}
 %{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
 
 \section*{Acknowledgments}
-We would like to thank the Marigold foundation for organising and funding DMBDI.
+We would like to thank the Marigold Foundation for organising and funding DMBDI.
 
-Adam Kurkiewicz would like to thank the college of Medical, Veterinary and Life Sciences as well as the Engineering and Physical Science Research Council for financing his Doctoral Training Programme stipend, student fees and his research fund.
+We would like to thank Linda Bachinsky and Keith Baggerly for their helpful comments on multiple revisions of this manuscript, as well as performing initial analysis and quality control on blood and muscle microarray samples. We would also like to thank Anna Casasent (nee Unruh) for performing quality control on blood and muscle microarray samples.
+
+Adam Kurkiewicz would like to thank the college of Medical, Veterinary and Life Sciences as well as the Engineering and Physical Science Research Council for financing his doctoral training programme stipend, student fees and his research fund.
 
 \nolinenumbers
 
